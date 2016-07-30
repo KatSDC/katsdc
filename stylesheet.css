@@ -1,0 +1,217 @@
+body {
+    background-color: #f4f1f0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 8em;
+    font-weight: 900;
+    color: #04334A;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: #04334A;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0;
+}
+
+a {
+    color: #f4f1f0;
+    text-decoration: none;
+}
+
+.section-container {
+    width: 70%;
+    position: relative;
+    float: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 50px;
+}
+
+/* Header Styling */
+
+.welcome {
+    z-index: 500;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background {
+    z-index: -5;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: 
+        url('images/waves.jpeg') 
+        no-repeat 
+        center 
+        center 
+        fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -2;
+}
+
+/* Navigation Styling */
+
+
+/* Portfolio Styling */
+
+.button {
+    display: inline-block;
+    background-color: #e23f3f;
+    border-radius:6px;
+    color: #f4f1f0;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+
+.portfolio {
+    background-color: #04334A;
+    color: #f4f1f0;
+}
+
+#portfolio {
+    color: #71d0ed;
+}
+
+
+/* Open Source Work Styling */
+
+.open-source {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ), url('images/skyflowers.jpeg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #04334a;
+}
+
+#open-source {
+    color: #e27373;
+}
+
+/* About Me Styling */
+
+.about {
+    background-color: #26758c;
+    color: #dad9d7;
+}
+
+#about {
+    color: #04334a;
+}
+
+#profile {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #f1f4f0;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Styling */
+
+.contact {
+    background-color: #dad9d7;
+}
+
+#contact {
+    color: #26758c;
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+}
+
+form div + div {
+    margin-top: 10px;
+}
+
+input, textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #9e9d9c;
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+button {
+    background-color: #e23f3f;
+    border-radius:6px;
+    color: #f4f1f0;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+i {
+    color: #fff;
+    margin: 5px;
+}
+
+i:hover {
+    color: #04334a;
+}

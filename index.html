@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kat Schroeder</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/3416cb8e6a.js"></script>
+</head>
+<body>
+<!-- Header -->
+    <div class="welcome">
+        <div class="background">
+            <h1>Kat Schroeder</h1>
+            <h2>Full Stack Web Developer</h2>
+        </div>
+    </div>
+
+<!-- Portfolio -->
+    <div class="section-container portfolio">
+        <h2 class="section-title" id="portfolio">Development Work</h2>
+        <h3>JiraTracker</h3>
+        <p>An app that makes information in JIRA easy to access. Users log in to see information about projects, tickets, and developers. They also get some metrics around each category of information. This app can be scaled up to provide more detailed productivity information, but it is currently hooked up to a dummy instance of JIRA.</p>
+        <p>Tools used for this project: Rails, HTML, Bootstrap, Git/GitHub, SQLite, PostGres, Heroku</p>
+        <a class="button" href="http://infinite-eyrie-9094.herokuapp.com/">View Live</a><a class="button" href="https://github.com/KatSDC/JiraTracker">View on GitHub</a>
+        <h3>NPR Recipe Finder</h3>
+        <p>A text based app that runs in the Command Line that allows the user to search for Recipes on NPR's website using keywords. This was built in Ruby and integrates with NPR through their open API.</p>
+        <p>Tools used for this project: Ruby, Git/GitHub</p>
+        <a class="button" href="#">View on GitHub</a>
+        <h3>Countly</h3>
+        <p>A simple counting app that let's the user increment or decrement a number using buttons. They can also reset the counter to 0. It was built using Javascript and Handlebars.</p>
+        <p>Tools used for this project: JavaScript, Handlebars.js, HTML5, CSS, Git/GitHub</p>
+        <a class="button" href="https://katsdc.github.io/JSDC2-Assignment5/">View Live</a><a class="button" href="https://github.com/KatSDC/JSDC2-Assignment5">View on GitHub</a>
+        <h3>SRSV</h3>
+        <p>A text based app built using Node.js that lets the player navigate the stars! It's an adventure game where they must choose where to go, find Artifacts, and return home - all before running out of fuel.</p>
+        <p>Tools used for this project: Node.js, Git/GitHub</p>
+        <a class="button" href="https://github.com/KatSDC/SRSV">View on GitHub</a>
+    </div>
+
+<!-- Open Source Work -->
+    <div class="section-container open-source">
+        <h2 class="section-title" id="open-source">Open Source</h2>
+        <h3>DCAF Case Management</h3>
+        <p>This is a Rails application that allows volunteers at the DC Abortion Fund to actively manage their call lists, handle cases across multiple volunteers, and distribute funds to women in need. I became involved in this project after the DC Day of Civic Hacking that was run by Code for DC in June of 2016. So far, my primary contribution to this project was to optimize the patient search to be case insensitive for patient names and also formatting agnostic for phone numbers. In addition to this, I also reorganized the call log to show in reverse chronological order. I look forward to making more contributions in the future!</p>
+        <p>Tools used for this project: Rails, Regex, MongoDB, Git/GitHub</p>
+        <button>View on GitHub</button>
+    </div>
+<!-- About Me -->
+    <div class="section-container about">
+        <h2 class="section-title" id="about">About Me</h2>
+        <img src="images/Profile.jpeg" id="profile" />
+        <p>I am a professional in the technology industry, with extensive experience on the business side. I started out in implementation and grew into account management and solution architecture. I have spent the last year working as a senior business analyst for a small consulting firm in Crystal City and am in the process of transitioning to Appian development.</p>
+        <p>I have taken both the Back End Web Development and the JavaScript Development courses through General Assembly in Washington, DC. You can see my work on my GitHub profile, some of which was done outside of class.</p>
+        <p>Feel free to ask me about any of my other passions, which include baking, DIY projects, IndyCar racing, science/fiction novels, and trashy television.</p>
+        <p>I also volunteer with the American Diabetes Association and regularly donate to the Fairfax County Animal Shelter.<p>
+    </div>
+<!-- Contact Me-->
+    <div class="section-container contact">
+        <h2 class="section-title" id="contact">Contact Me</h2>
+        <form action="mailto:schroeder.kat@gmail.com" method="post">
+            <div>
+                <input type="text" id="name" name="user_name" placeholder="Name"/>
+            </div>
+            <div>
+                <input type="email" id="mail" name="user_mail" placeholder="E-mail" />
+            </div>
+            <div>
+                <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/katschroeder"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://github.com/KatSDC"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/KatSDC"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/katschroe/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</body>
+</html>
