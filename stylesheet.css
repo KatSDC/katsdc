@@ -87,6 +87,48 @@ a {
 
 /* Navigation Styling */
 
+ul {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    padding: 0 10px;
+    color: #04334a;
+}
+
+a#header {
+        color: #04334a;
+}
+
+a#header:hover {
+    color: #e27373;
+}
+
+.nav {
+    background-color: #f4f1f0;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.sticky {
+    background-color: #f4f1f0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+#title {
+    float: right;
+    padding: 0 25px 0 0;
+    visibility: hidden;
+}
+
 
 /* Portfolio Styling */
 
@@ -113,6 +155,9 @@ a {
     color: #71d0ed;
 }
 
+#portfolio-title {
+    color: #dad9d7;
+}
 
 /* Open Source Work Styling */
 
@@ -214,4 +259,8 @@ i {
 
 i:hover {
     color: #04334a;
+}
+
+#center {
+    text-align: center;
 }
