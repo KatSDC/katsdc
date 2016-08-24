@@ -1,10 +1,11 @@
 body {
     background-color: #f4f1f0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 8em;
     font-weight: 900;
@@ -14,6 +15,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     font-weight: 900;
     color: #04334A;
@@ -22,6 +24,7 @@ h2 {
 
 h3 {
     font-size: 2em;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     margin: 0;
 }
@@ -67,29 +70,27 @@ a {
 }
 
 .background {
-    z-index: -5;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    position: absolute;
+    height: 300%;
     background: 
         url('images/waves.jpeg') 
         no-repeat 
-        center 
         center 
         fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: -2;
+    position: fixed;
+    z-index: -1;
 }
 
 /* Navigation Styling */
 
 ul {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     margin: 0;
 }
@@ -97,15 +98,7 @@ ul {
 li {
     display: inline;
     padding: 0 10px;
-    color: #04334a;
-}
-
-a#header {
-        color: #04334a;
-}
-
-a#header:hover {
-    color: #e27373;
+    margin: 0;
 }
 
 .nav {
@@ -113,6 +106,14 @@ a#header:hover {
     width: 100%;
     padding: 0;
     position: relative;
+}
+
+.nav a {
+        color: #04334a;
+}
+
+.nav a:hover {
+    color: #e23f3f;
 }
 
 .sticky {
@@ -124,9 +125,14 @@ a#header:hover {
     border-top: 0;
 }
 
+.wrapper {
+    height: 65px;
+}
+
 #title {
     float: right;
-    padding: 0 25px 0 0;
+    padding: 0 50px 0 0;
+    color: #04334a;
     visibility: hidden;
 }
 
@@ -147,22 +153,24 @@ a#header:hover {
     margin-right: 10px;
 }
 
+.button:hover {
+   cursor: pointer;
+}
+
+.button:active{
+   border: none;
+}
+
 .portfolio {
-    background-color: #04334A;
-    color: #f4f1f0;
-}
-
-#portfolio {
-    color: #71d0ed;
-}
-
-#portfolio-title {
-    color: #dad9d7;
+    background-color: #75d0eb;
+    color: #04334A;
 }
 
 /* Open Source Work Styling */
 
 .open-source {
+    color: #04334a;
+    width: 100%;
     background: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
@@ -171,7 +179,7 @@ a#header:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #04334a;
+    z-index: -1;
 }
 
 #open-source {
@@ -181,22 +189,21 @@ a#header:hover {
 /* About Me Styling */
 
 .about {
-    background-color: #26758c;
-    color: #dad9d7;
-}
-
-#about {
-    color: #04334a;
+    background-color: #75d0eb;
+    color: #04334A;
 }
 
 #profile {
     display: block;
     height: 200px;
     width: 200px;
-    border: 1px solid #f1f4f0;
+    border: none;
     border-radius: 100px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow:{
+        rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px
+    }
 }
 
 /* Contact Styling */
@@ -228,6 +235,7 @@ input, textarea {
     box-sizing: border-box;
     border: 1px solid #fff;
     border-radius: 6px;
+    padding: 5px;
 }
 
 textarea {
@@ -249,6 +257,10 @@ button {
     margin-right: 5px;
 }
 
+button:active{
+   border: none;
+}
+
 .social-media {
     text-align: center;
 }
@@ -259,7 +271,7 @@ i {
 }
 
 i:hover {
-    color: #04334a;
+    color: #e23f3f;
 }
 
 #center {

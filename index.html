@@ -3,12 +3,13 @@
 <head>
     <title>Kat Schroeder</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto" rel="stylesheet">
     <script src="https://use.fontawesome.com/3416cb8e6a.js"></script>
 </head>
 <body>
+
 <!-- Header -->
-    <div class="welcome" id="welcome">
+    <div class="welcome">
         <div class="background">
             <h1>Kat Schroeder</h1>
             <h2>Full Stack Web Developer</h2>
@@ -16,16 +17,17 @@
     </div>
 
 <!-- Navigation Bar-->
-
-    <div class="nav" id="navbar">
-        <ul>
-            <li><a href="#welcome" id="header">Home</a></li>
-            <li><a href="#portfolio" id="header">Portfolio</a></li>
-            <li><a href="#open" id="header">Open Source</a></li>
-            <li><a href="#about" id="header">About Me</a></li>
-            <li><a href="#contact" id="header">Contact Me</a></li>
-            <li id="title">Kat Schroeder</li>
-        </ul>
+    <div class="wrapper">
+        <div class="nav" id="navbar">
+            <ul>
+                <li><a href="#welcome" id="header">Home</a></li>
+                <li><a href="#portfolio" id="header">Portfolio</a></li>
+                <li><a href="#open" id="header">Open Source</a></li>
+                <li><a href="#about" id="header">About Me</a></li>
+                <li><a href="#contact" id="header">Contact Me</a></li>
+                <li id="title">Kat Schroeder</li>
+            </ul>
+        </div>
     </div>
 
 <!-- Portfolio -->
@@ -54,7 +56,7 @@
     </div>
 
 <!-- Open Source Work -->
-    <div class="section-container open-source" id="open">
+    <div class="section-container open-source parallax" id="open">
         <h2 class="section-title" id="open-source">Open Source</h2>
         <h3>DCAF Case Management</h3>
         <p>This is a Rails application that allows volunteers at the DC Abortion Fund to actively manage their call lists, handle cases across multiple volunteers, and distribute funds to women in need. I became involved in this project after the DC Day of Civic Hacking that was run by Code for DC in June of 2016. So far, my primary contribution to this project was to optimize the patient search to be case insensitive for patient names and also formatting agnostic for phone numbers. In addition to this, I reorganized the call log to show in reverse chronological order. I look forward to making more contributions in the future!</p>
