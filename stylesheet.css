@@ -1,27 +1,28 @@
 body {
     background-color: #f4f1f0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: #04334a;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 8em;
     font-weight: 900;
-    color: #04334A;
     margin: 0;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     font-weight: 900;
-    color: #04334A;
     margin: 0;
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
     font-weight: 900;
     margin: 0;
@@ -115,6 +116,7 @@ a#header:hover {
     width: 100%;
     padding: 0;
     position: relative;
+    margin: 0;
 }
 
 .sticky {
@@ -128,11 +130,12 @@ a#header:hover {
 
 .wrapper {
     height: 65px;
+    margin: 0;
 }
 
 #title {
     float: right;
-    padding: 0 25px 0 0;
+    padding: 0 40px 0 0;
     visibility: hidden;
 }
 
@@ -216,7 +219,7 @@ form div + div {
 }
 
 input, textarea {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 1em;
     color: #9e9d9c;
     width: 500px;
