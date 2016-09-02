@@ -22,6 +22,11 @@ $(document).ready(function() {
 		stickyNav();
 	});
 
+	//Fix positioning of in-page anchor links
+	var shiftWindow = function() { scrollBy(0, -50) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
+
 	//Parallax
 	$(window).scroll(function(e){
 	  parallax();
@@ -31,4 +36,7 @@ $(document).ready(function() {
 	  var scrolled = $(window).scrollTop();
 	  $('.background').css('top',-(scrolled*0.2)+'px');
 	}
+
+	//Anchor link padding fix
+	window.addEventListener("hashchange", function() { scrollBy(0, -15) })
 });

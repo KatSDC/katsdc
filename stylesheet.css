@@ -127,7 +127,6 @@ li {
 
 .wrapper {
     height: 65px;
-    position: relative;
 }
 
 #title {
@@ -163,6 +162,7 @@ li {
 
 .portfolio {
     background-color: #75d0eb;
+    padding-top: 65px;
 }
 
 /* Open Source Work Styling */
