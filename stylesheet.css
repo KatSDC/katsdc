@@ -84,7 +84,6 @@ a {
     -o-background-size: cover;
     background-size: cover;
     position: absolute;
-    z-index: -1;
 }
 
 /* Navigation Styling */
@@ -106,6 +105,7 @@ li {
     width: 100%;
     padding: 0;
     position: relative;
+    visibility: visible;
 }
 
 .nav a {
@@ -199,12 +199,6 @@ li {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    /*box-shadow:{
-        0px 3px 10px rgba(0, 0, 0, 0.156863), 0px 3px 10px rgba(0, 0, 0, 0.227451)
-    };*/
-/*    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;*/
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.38);
 }
 
@@ -212,6 +206,7 @@ li {
 
 .contact {
     background-color: #dad9d7;
+    padding-bottom: 50px;
 }
 
 form {
@@ -221,7 +216,7 @@ form {
 }
 
 form div + div {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 input, textarea {
@@ -250,8 +245,14 @@ button {
     text-decoration: none;
     border: none;
     padding: 10px;
+    margin-top: 10px;
     margin-bottom: 40px;
     margin-right: 5px;
+    box-shadow: 5px 5px 8px -4px rgba(0, 0, 0, 0.59);
+}
+
+legend {
+    margin-bottom: 10px;
 }
 
 .social-media {
