@@ -2,9 +2,9 @@ $(document).ready(function() {
 	//Grab the initial top offset of the navigation 
 	var stickyNavTop = $('.nav').offset().top;
 		   	
-	//Function that decides weather the navigation bar should have "fixed" css position or not.
+	//Function that decides whether the navigation bar should have "fixed" css position or not.
 	var stickyNav = function(){
-		var scrollTop = $(window).scrollTop(); //Current vertical position from the top
+		var scrollTop = $(window).scrollTop() + 65; //Current vertical position from the top
 
 		if (scrollTop > stickyNavTop) {
 			$('.nav').addClass('sticky');
