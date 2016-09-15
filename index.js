@@ -4,12 +4,12 @@ $(document).ready(function() {
 		   	
 	//Function that decides whether the navigation bar should have "fixed" css position or not.
 	var stickyNav = function() {
-		var scrollTop = $(window).scrollTop() + 115; //Current vertical position from the top
+		var scrollTop = $(window).scrollTop() + 65; //Current vertical position from the top
 
 		if (scrollTop > stickyNavTop) {
 			$('.nav').addClass('sticky');
-			$('.nav').fadeIn(300, function() {
-				//Parallax for open source section loads only after NavBar is present to prevent offset issues
+			$('.nav').fadeIn(400, function() {
+				//Parallax for open source section loads only after navbar is present to prevent offset issues
 				$('.open-source').parallax({imageSrc: 'images/skyflowers.jpeg'});
 			});
 		} else {

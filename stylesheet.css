@@ -268,3 +268,10 @@ i:hover {
 #center {
     text-align: center;
 }
+
+@media screen and (max-width: 320px) {
+    .section-title {
+        position: relative;
+        padding: 20px 0;
+    }
+}
