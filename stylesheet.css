@@ -56,7 +56,6 @@ a {
 /* Header Styling */
 
 .welcome {
-    z-index: 500;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -201,52 +200,6 @@ li {
     padding-bottom: 50px;
 }
 
-form {
-    margin: 0 auto;
-    width: 600px;
-    padding: 1em;
-}
-
-form div + div {
-    margin-top: 15px;
-}
-
-input, textarea {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1em;
-    color: #9e9d9c;
-    width: 500px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #fff;
-    border-radius: 6px;
-}
-
-textarea {
-    vertical-align: top;
-    height: 5em;
-    resize: vertical;
-}
-
-button {
-    background-color: #e23f3f;
-    border-radius:6px;
-    color: #f4f1f0;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    margin-right: 5px;
-    box-shadow: 5px 5px 8px -4px rgba(0, 0, 0, 0.59);
-}
-
-legend {
-    margin-bottom: 10px;
-}
-
 .social-text {
     text-align: center;
     margin-bottom: 20px;
@@ -269,9 +222,12 @@ i:hover {
     text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
     .section-title {
         position: relative;
+        writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        -webkit-writing-mode: horizontal-tb;
         padding: 20px 0;
     }
 }
