@@ -196,7 +196,7 @@ li {
 /* Contact Styling */
 
 .contact {
-    background-color: #abb2ba;
+    background-color: #dad9d7;
     padding-bottom: 50px;
     height: 240px;
 }
@@ -211,12 +211,12 @@ li {
 }
 
 i {
-    color: #fff;
+    color: #04334a;
     margin: 5px;
 }
 
 i:hover {
-    color: #04334a;
+    color: #e23f3f;
 }
 
 #center {
