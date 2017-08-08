@@ -9,8 +9,13 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 8em;
-    font-weight: 900;
     margin: 0;
+    padding-top: 50px;
+}
+@media only screen and (max-width: 766px) {
+    h1 {
+        font-size: 6em;
+    }
 }
 
 h2 {
@@ -51,6 +56,17 @@ a {
     top: 50px;
     left: 30px;
     width: 50px;
+}
+@media only screen and (max-width: 766px) {
+    .section-title {
+        writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        webkit-writing-mode: horizontal-tb;
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
 }
 
 /* Header Styling */
@@ -95,10 +111,24 @@ li {
     padding: 0 10px;
     margin: 0;
 }
+@media only screen and (max-width: 766px) {
+    li {
+        display: block;
+    }
+}
+
+.navbutton {
+    display: none;
+    background-color: #f4f1f0;
+}
+@media only screen and (max-width: 766px) {
+    .navbutton {
+        display: inline;
+    }
+}
 
 .nav {
-    background-color: #f4f1f0;
-    width: 100%;
+    height: 59px;
     padding: 0;
     position: relative;
     visibility: visible;
@@ -121,10 +151,24 @@ li {
     border-top: 0;
 }
 
-#title {
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+
+.name {
+    display: inline;
     float: right;
-    padding: 0 50px 0 0;
+    padding-right: 80px;
     color: #04334a;
+}
+
+.hidden {
+}
+@media screen only and (max-width: 766px) {
+    .hidden {
+        display: hidden;
+    }
 }
 
 /* Portfolio Styling */
@@ -210,12 +254,12 @@ li {
     text-align: center;
 }
 
-i {
+.social-icon {
     color: #04334a;
     margin: 5px;
 }
 
-i:hover {
+.social-icon:hover {
     color: #e23f3f;
 }
 
@@ -223,12 +267,4 @@ i:hover {
     text-align: center;
 }
 
-@media (max-width: 320px) {
-    .section-title {
-        position: relative;
-        writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-        -webkit-writing-mode: horizontal-tb;
-        padding: 20px 0;
-    }
-}
+/* Mobile Styling */

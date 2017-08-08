@@ -18,15 +18,15 @@
 <!-- Navigation Bar-->
     <div class="nav">
         <ul>
-            <li><a href="#welcome" id="header">Home</a></li>
-            <li><a href="#portfolio" id="header">Portfolio</a></li>
-            <li><a href="#open" id="header">Open Source</a></li>
-            <li><a href="#about" id="header">About Me</a></li>
-            <li><a href="#contact" id="header">Contact Me</a></li>
-            <li id="title">Kat Schroeder</li>
+            <li><button class="navbutton"><i id="navbutton" class="fa fa-bars fa-2x"></i></button></li>
+            <li class="hidden"><a href="#welcome" id="header">Home</a></li>
+            <li class="hidden"><a href="#portfolio" id="header">Portfolio</a></li>                              
+            <li class="hidden"><a href="#open" id="header">Open Source</a></li>
+            <li class="hidden"><a href="#about" id="header">About Me</a></li>
+            <li class="hidden"><a href="#contact" id="header">Contact Me</a></li>
+            <li class="name">Kat Schroeder</li>
         </ul>
     </div>
-
 
 <!-- Portfolio -->
     <div class="section-container portfolio" id="portfolio">
@@ -59,15 +59,23 @@
         <h3>DCAF Case Management</h3>
         <p>This is a Rails application that allows volunteers at the DC Abortion Fund to actively manage their call lists, handle cases across multiple volunteers, and distribute funds to women in need. I became involved in this project after the DC Day of Civic Hacking that was run by Code for DC in June of 2016. So far, my primary contribution to this project was to optimize the patient search to be case insensitive for patient names and also formatting agnostic for phone numbers. In addition to this, I reorganized the call log to show in reverse chronological order. I look forward to making more contributions in the future!</p>
         <p>Tools used for this project: Rails, Regex, MongoDB, Git/GitHub</p>
-        <a class="button" href="https://github.com/colinxfleming/dcaf_case_management/pull/436">View Pull Request 1</a>
-        <a class="button" href="https://github.com/colinxfleming/dcaf_case_management/pull/440">View Pull Request 2</a>
-        <a class="button" href="https://github.com/colinxfleming/dcaf_case_management/pull/562">View Pull Request 3</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/436">View Pull Request 1</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/440">View Pull Request 2</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/562">View Pull Request 3</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/776">View Pull Request 4</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/918">View Pull Request 5</a>
+        <a class="button" href="https://github.com/DCAFEngineering/dcaf_case_management/pull/1031">View Pull Request 6</a>
+        <h3>TeamMatrix.io</h3>
+        <p>This web application was built as part of the Women In Tech Demo Days hackathon that took place on July 21-22 2017. It is intended to be used as a tool for companies to choose open diversity standards to adhere to during the hiring process and evaluate potential candidates against. It also allows them to track skills of their employees so they can build out robust teams or pair up people who wish to learn new skills with the right resources. Finally, it empowers employers to track opportunities given to individual employees, so they can spread these opportunities to employees who haven't received them yet, or pair them with senior developers who have a say in the promotion process. I built out the opportunity view including filtering down the employees in the database and organizing them in a grid view. I also wrote a function that randomly generates blocks of green in different shades to simulate a heat map for the opportunity grid until we are able to add opportunity data into the database.
+        <p>Tools used for this project: Meteor.js, React, MongoDB, Git/GitHub</p>
+        <a class="button" href="https://github.com/leighlawhon/TIESapp/pull/1">View Pull Request 1</a>
+        <a class="button" href="https://github.com/leighlawhon/TIESapp/pull/2">View Pull Request 2</a>
     </div>
 <!-- About Me -->
     <div class="section-container about" id="about">
         <h2 class="section-title" id="about">About Me</h2>
         <img src="images/Kat_11_16_-61.jpg" id="profile" />
-        <p>I am a professional in the technology industry, with extensive experience on the business side. I started out in implementation and grew into account management and solution architecture. I spent the last year working as a senior business analyst for a small consulting firm in Crystal City and now do Appian development for the same company.</p>
+        <p>I am a professional in the technology industry, with extensive experience on the business side. I started out in implementation and grew into account management and solution architecture. I am now leading the test automation efforts for a government project with a small company in Virginia.</p>
         <p>I have taken both the Back End Web Development and the JavaScript Development courses through General Assembly in Washington, DC. You can see my work on my GitHub profile.</p>
         <p>Feel free to ask me about any of my other passions, which include baking, DIY projects, IndyCar racing, science/fiction novels, and trashy television.</p>
         <p>I also volunteer with the American Diabetes Association and donate regularly to the Fairfax County Animal Shelter.<p>
@@ -78,15 +86,22 @@
         <div class="social-text">Please feel free to reach out to me through any of the following:</div>
         <div class="social-media">
             <a href="mailto:schroeder.kat@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/katschroeder"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-            <a href="https://github.com/KatSDC"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/KatSDC"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/katschroe/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/katschroeder"><i class="fa fa-linkedin-square fa-3x social-icon" aria-hidden="true"></i></a>
+            <a href="https://github.com/KatSDC"><i class="fa fa-github fa-3x social-icon" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/KatSDC"><i class="fa fa-twitter-square fa-3x social-icon" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/katschroe/"><i class="fa fa-instagram fa-3x social-icon" aria-hidden="true"></i></a>
         </div>
     </div>
 
+<!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
     <script src="parallax.js-1.4.2/parallax.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_bHtAUVXHiGBCgt6DxDYJP");
+        })();
+    </script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
