@@ -66,6 +66,7 @@ a {
         top: auto;
         left: auto;
         width: 100%;
+        padding: 20px 0;
     }
 }
 
@@ -111,24 +112,12 @@ li {
     padding: 0 10px;
     margin: 0;
 }
-@media only screen and (max-width: 766px) {
-    li {
-        display: block;
-    }
-}
 
 .navbutton {
-    display: none;
-    background-color: #f4f1f0;
-}
-@media only screen and (max-width: 766px) {
-    .navbutton {
-        display: inline;
-    }
+    visibility: hidden;
 }
 
 .nav {
-    height: 59px;
     padding: 0;
     position: relative;
     visibility: visible;
@@ -147,14 +136,9 @@ li {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     border-top: 0;
 }
-
-.fa-bars:hover {
-    cursor: pointer;
-}
-
 
 .name {
     display: inline;
@@ -163,11 +147,29 @@ li {
     color: #04334a;
 }
 
-.hidden {
-}
-@media screen only and (max-width: 766px) {
-    .hidden {
-        display: hidden;
+@media screen and (max-width: 680px) {
+    li:not(:nth-child(1)) {
+        display: none;
+    }    
+
+    .navbutton {
+        visibility: visible;
+    }
+
+    .name {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .responsive li {
+        display: inline;
+        float: none;
+    }
+
+    .responsive li a {
+        display: block;
+        text-align: left;
     }
 }
 

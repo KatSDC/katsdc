@@ -17,14 +17,15 @@
 
 <!-- Navigation Bar-->
     <div class="nav">
-        <ul>
-            <li><button class="navbutton"><i id="navbutton" class="fa fa-bars fa-2x"></i></button></li>
-            <li class="hidden"><a href="#welcome" id="header">Home</a></li>
-            <li class="hidden"><a href="#portfolio" id="header">Portfolio</a></li>                              
-            <li class="hidden"><a href="#open" id="header">Open Source</a></li>
-            <li class="hidden"><a href="#about" id="header">About Me</a></li>
-            <li class="hidden"><a href="#contact" id="header">Contact Me</a></li>
-            <li class="name">Kat Schroeder</li>
+        <ul class="topnav" id="dropdown-click">
+            <li class="navbutton"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            <li><a href="#welcome" id="header">Home</a></li>
+            <li><a href="#portfolio" id="header">Portfolio</a></li>                              
+            <li><a href="#open" id="header">Open Source</a></li>
+            <li><a href="#about" id="header">About Me</a></li>
+            <li><a href="#contact" id="header">Contact Me</a></li>
+<!--             <li class="name">Kat Schroeder</li> -->
+            <span class="name">Kat Schroeder</span>
         </ul>
     </div>
 
@@ -103,5 +104,15 @@
         })();
     </script>
     <script type="text/javascript" src="index.js"></script>
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdown-click");
+            if(x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
