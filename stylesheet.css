@@ -12,11 +12,6 @@ h1 {
     margin: 0;
     padding-top: 50px;
 }
-@media only screen and (max-width: 766px) {
-    h1 {
-        font-size: 6em;
-    }
-}
 
 h2 {
     text-align: center;
@@ -56,18 +51,6 @@ a {
     top: 50px;
     left: 30px;
     width: 50px;
-}
-@media only screen and (max-width: 766px) {
-    .section-title {
-        writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-        webkit-writing-mode: horizontal-tb;
-        position: static;
-        top: auto;
-        left: auto;
-        width: 100%;
-        padding: 20px 0;
-    }
 }
 
 /* Header Styling */
@@ -147,32 +130,6 @@ li {
     color: #04334a;
 }
 
-@media screen and (max-width: 680px) {
-    li:not(:nth-child(1)) {
-        display: none;
-    }    
-
-    .navbutton {
-        visibility: visible;
-    }
-
-    .name {
-        position: absolute;
-        top: 20px;
-        right: 0;
-    }
-
-    .responsive li {
-        display: inline;
-        float: none;
-    }
-
-    .responsive li a {
-        display: block;
-        text-align: left;
-    }
-}
-
 /* Portfolio Styling */
 
 .button {
@@ -207,6 +164,10 @@ li {
 
 .open-source {
     background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    );
+    background: -webkit-linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.7)
     );
@@ -270,3 +231,47 @@ li {
 }
 
 /* Mobile Styling */
+@media screen and (max-width: 766px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .section-title {
+        writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        webkit-writing-mode: horizontal-tb;
+        position: static;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 20px 0;
+    }
+    
+    li:not(:nth-child(1)) {
+        display: none;
+    }    
+
+    .navbutton {
+        visibility: visible;
+    }
+
+    .name {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .responsive li {
+        display: inline;
+        float: none;
+    }
+
+    .responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
