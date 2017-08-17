@@ -31,4 +31,13 @@ $(document).ready(function() {
 
 	//Parallax for welcome section
 	$('.background').parallax({imageSrc: 'images/waves.jpeg'});
+
+	function dropdownMenu() {
+        var x = document.getElementById("dropdown-click");
+        if(x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
 });
