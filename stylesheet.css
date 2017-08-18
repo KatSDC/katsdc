@@ -93,7 +93,6 @@ ul {
 li {
     display: inline;
     padding: 0 10px;
-/*    margin: 0;*/
 }
 
 .navbutton {
@@ -256,8 +255,7 @@ li {
     }
 
     .responsive ul {
-        width: calc(100%-20px)
-        padding: 0 10px;
+        width: calc(100%-20px);
     }
     
     li:not(:nth-child(1)) {
@@ -266,6 +264,7 @@ li {
 
     .navbutton {
         visibility: visible;
+        padding: 0;
     }
 
     .name {
@@ -282,5 +281,9 @@ li {
     .responsive li a {
         display: block;
         text-align: left;
+    }
+
+    li.navlink {
+        padding: 10px 0;
     }
 }
