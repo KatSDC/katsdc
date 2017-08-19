@@ -271,14 +271,11 @@ li {
     .responsive li {
         display: inline;
         float: none;
+        padding-bottom: 20px;
     }
 
     .responsive li a {
         display: block;
         text-align: left;
-    }
-
-    li.navlink {
-        padding: 10px 0;
     }
 }
