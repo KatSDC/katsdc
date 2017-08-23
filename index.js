@@ -10,7 +10,11 @@ $(document).ready(function() {
 			$('.nav').addClass('sticky');
 			$('.nav').fadeIn(400, function() {
 				//Parallax for open source section loads only after navbar is present to prevent offset issues
-				$('.open-source').parallax({imageSrc: 'images/skyflowers.jpeg'});
+				if ($('dropdown-click').hasClass('responsive')) {
+					
+				} else {
+					$('.open-source').parallax({imageSrc: 'images/skyflowers.jpeg'});
+				}
 			});
 		} else {
 			$('.nav').removeClass('sticky'); 
@@ -31,13 +35,4 @@ $(document).ready(function() {
 
 	//Parallax for welcome section
 	$('.background').parallax({imageSrc: 'images/waves.jpeg'});
-
-	function dropdownMenu() {
-        var x = document.getElementById("dropdown-click");
-        if(x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
 });

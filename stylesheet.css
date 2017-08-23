@@ -141,7 +141,7 @@ li {
     text-decoration: none;
     border: none;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-right: 10px;
     box-shadow: 5px 5px 8px -4px rgba(0, 0, 0, 0.59);
 }
@@ -277,5 +277,9 @@ li {
     .responsive li a {
         display: block;
         text-align: left;
+    }
+
+    .open-source {
+        background-color: #CDE7F3;
     }
 }
