@@ -10,11 +10,7 @@ $(document).ready(function() {
 			$('.nav').addClass('sticky');
 			$('.nav').fadeIn(400, function() {
 				//Parallax for open source section loads only after navbar is present to prevent offset issues
-				if ($('dropdown-click').hasClass('responsive')) {
-					
-				} else {
-					$('.open-source').parallax({imageSrc: 'images/skyflowers.jpeg'});
-				}
+				$('.open-source').parallax({imageSrc: 'images/skyflowers.jpeg'});
 			});
 		} else {
 			$('.nav').removeClass('sticky'); 
