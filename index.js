@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$('.nav').addClass('sticky');
 			$('.nav').fadeIn(400, function() {
 				//Parallax for open source section loads only after navbar is present to prevent offset issues
-				$('.open-source').parallax({imageSrc: 'images/skyflowers.jpg'});
+				$('.open-source').parallax({imageSrc: 'images/skyflowers.webp'});
 			});
 		} else {
 			$('.nav').removeClass('sticky'); 
@@ -30,7 +30,7 @@ $(document).ready(function() {
 	window.addEventListener("hashchange", shiftWindow);
 
 	//Parallax for welcome section
-	$('.background').parallax({imageSrc: 'images/waves.jpeg'});
+	$('.background').parallax({imageSrc: 'images/waves.webp'});
 });
 
 document.addEventListener("DOMContentLoaded", function() {
