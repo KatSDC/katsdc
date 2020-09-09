@@ -53,6 +53,23 @@ a {
     width: 50px;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.focusable.visually-hidden:focus {
+  position: relative;
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
 /* Header Styling */
 
 .welcome {
