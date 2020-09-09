@@ -150,7 +150,7 @@ li {
 
 .button {
     display: inline-block;
-    background-color: #e23f3f;
+    background-color: #d52020;
     border-radius:6px;
     color: #f4f1f0;
     font-size: 1em;
@@ -187,7 +187,7 @@ li {
 }
 
 #open-source {
-    color: #e27373;
+    color: #bf1d1d;
 }
 
 /* About Me Styling */
